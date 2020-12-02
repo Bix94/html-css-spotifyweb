@@ -1,0 +1,96 @@
+/* REGOLE DI DEFAULT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* IMP CONTAINER + no overflow + VH per occupare tutto lo spazio*/
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  overflow: hidden;
+}
+/* RED STATS flex e fixed */
+main {
+  display: flex;
+  height: calc(100% - 90px);
+}
+footer {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  background-color: orange;
+  display: flex;
+}
+/* COLORI SFONDI */
+.bgcb {
+  background-color: blue;
+}
+.bgcr {
+  background-color: red;
+}
+.bgcg {
+  background-color: green;
+}
+/* NAV SX  OVERFLOW Y*/
+.main-nav-body {
+  flex-grow: 2;
+  min-height: 300px;
+  overflow-y: auto;
+}
+/* FLEX COLONNA */
+.main-nav {
+  width: 300px;
+  height: 100%;
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* PARTE DX */
+.main-libreria {
+  width: calc(100% - 300px);
+  height: 100%;
+  padding-top: 90px;
+  background-color: blue;
+  overflow-y: scroll;
+}
+.top {
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 1;
+  background-color: darkblue;
+  width: calc(100% - 300px);
+  height: 90px;
+  line-height: 90px;
+  text-align: right;
+}
+.navbar li{
+  display: inline;
+}
+/* BTN + A */
+.btn {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+a.btn {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* FOOTER */
+.foot{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box{
+  height: 90px;
+  width: 90px;
+  background-color: brown;
+}
