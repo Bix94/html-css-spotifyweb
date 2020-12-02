@@ -23,7 +23,22 @@ footer {
   bottom:0;
   left: 0;
   background-color: orange;
-  display: flex;
+  width: 100%;
+}
+ul{
+  list-style: none;
+}
+h2{
+  color: white;
+}
+/* IMMAGINI */
+.normal{
+  height: 150px;
+  padding-right: 10px;
+}
+
+.circle{
+  border-radius:999em;
 }
 /* COLORI SFONDI */
 .bgcb {
@@ -57,6 +72,7 @@ footer {
   padding-top: 90px;
   background-color: blue;
   overflow-y: scroll;
+
 }
 .top {
   position: fixed;
@@ -69,8 +85,13 @@ footer {
   line-height: 90px;
   text-align: right;
 }
+.navbar{
+  width: 100%;
+  text-align: center;
+}
 .navbar li{
   display: inline;
+  text-transform: uppercase;
 }
 /* BTN + A */
 .btn {
@@ -86,11 +107,55 @@ a.btn {
 }
 /* FOOTER */
 .foot{
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px;
 }
 .box{
-  height: 90px;
+  height: 50px;
   width: 90px;
   background-color: brown;
+}
+/* PADDING&MARGINI */
+.pd_30{
+  padding: 30px 0;
+}
+/* TOP */
+.pdt_90{
+  padding-top: 50px;
+}
+.pdt_50{
+  padding-top: 50px;
+}
+.pdt_30{
+  padding-top: 30px;
+}
+.pdt_20{
+  padding-top: 20px;
+}
+.pdt_10{
+  padding-top: 10px;
+}
+/* BOTTOM */
+.pdb_50{
+  padding-bottom: 50px;
+}
+.pdb_30{
+  padding-bottom: 30px;
+}
+/* RIGHT */
+.pdr_10{
+  padding-right: 10px;
+}
+.pdr_30{
+  padding-right: 30px;
+}
+/* LEFT */
+.pdl_30{
+  padding-left: 30px;
+}
+.pdl_10{
+  padding-left: 20px;
 }
