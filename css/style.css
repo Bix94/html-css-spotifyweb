@@ -25,7 +25,7 @@ footer {
   background-color: orange;
   width: 100%;
 }
-h2{
+h2, h4{
   color: white;
 }
 ul{
@@ -67,7 +67,7 @@ ul{
   color: white;
 }
 .tcg{
-  color: #5f6778
+  color: #919496;
 }
 /* NAV SX  OVERFLOW Y*/
 .main-nav-body {
@@ -90,7 +90,8 @@ ul{
   padding-top: 90px;
   background-color: blue;
   overflow-y: scroll;
-
+  display: flex;
+  flex-direction: row;
 }
 .top {
   position: fixed;
@@ -105,15 +106,16 @@ ul{
 }
 .navbar{
   width: 100%;
-  text-align: center;
 }
+.recenti:not(h2){
+  display: inline-flex;
+}
+
 /* LISTE */
 .navbar li{
   display: inline;
   text-transform: uppercase;
-}
-.nome li{
-  /* padding-top: 8px; */
+  padding-right: 15px;
 }
 /* BTN + A */
 .btn {
@@ -147,6 +149,8 @@ a.btn {
 .up{
   text-transform: uppercase;
 }
+
+
 /* PADDING&MARGINI */
 .pd_30{
   padding: 30px 0px;
@@ -181,11 +185,14 @@ a.btn {
   padding-bottom: 10px;
 }
 /* RIGHT */
+.pdr_30{
+  padding-right: 30px;
+}
 .pdr_10{
   padding-right: 10px;
 }
-.pdr_30{
-  padding-right: 30px;
+.pdr_5{
+  padding-right: 5px;
 }
 /* LEFT */
 .pdl_30{
