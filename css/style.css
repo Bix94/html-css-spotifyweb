@@ -22,18 +22,22 @@ footer {
   position: fixed;
   bottom:0;
   left: 0;
-  background-color: orange;
+  background-color: darkgrey;
   width: 100%;
 }
 h2, h4{
   color: white;
 }
+h4{
+  padding-top: 10px;
+}
 ul{
   list-style: none;
 }
-
-
-/* IMMAGINI */
+hr{
+  width: 90%;
+}
+/* IMMAGINI WARNING */
 .normal{
   height: 150px;
   padding-right: 10px;
@@ -44,6 +48,9 @@ ul{
 .logo{
   height: 47px;
 }
+.md{
+  height: 50px;
+}
 .sm{
   height: 30px;
 }
@@ -51,15 +58,7 @@ ul{
   height: 20px;
 }
 /* COLORI SFONDI */
-.bgcb {
-  background-color: blue;
-}
-.bgcr {
-  background-color: red;
-}
-.bgcg {
-  background-color: green;
-}
+
 .bgcbk {
   background-color: black;
 }
@@ -88,7 +87,7 @@ ul{
   width: calc(100% - 250px);
   height: 100%;
   padding-top: 90px;
-  background-color: blue;
+  background-color: #141922;
   overflow-y: scroll;
   display: flex;
   flex-direction: row;
@@ -98,17 +97,23 @@ ul{
   top:0;
   right:0;
   z-index: 1;
-  background-color: darkblue;
   width: calc(100% - 250px);
   height: 90px;
   line-height: 90px;
   text-align: right;
+  background-color: black;
+  opacity: 0.5;
 }
 .navbar{
   width: 100%;
 }
-.recenti:not(h2){
-  display: inline-flex;
+.recenti{
+display:flex;
+flex-direction: column;
+}
+.row{
+display:flex;
+flex-direction: row;
 }
 
 /* LISTE */
@@ -116,6 +121,19 @@ ul{
   display: inline;
   text-transform: uppercase;
   padding-right: 15px;
+}
+.nome li a {
+  color: #919496;
+}
+.navbar li:hover{
+  color: white;
+}
+.nome a:hover{
+  color: white;
+}
+#bg{
+  border-bottom: 1px solid green;
+  border-width: medium;
 }
 /* BTN + A */
 .btn {
@@ -141,16 +159,29 @@ a.btn {
   padding: 20px 20px;
 }
 .box{
+  width: 200px;
   height: 50px;
-  width: 90px;
   background-color: brown;
 }
-/* STILI */
+/* WARNING STILI */
 .up{
   text-transform: uppercase;
 }
+.tac{
+  text-align: center;
+}
 
-
+/*  WARNING HOVER */
+.opa:hover{
+  opacity: 0.5;
+}
+.hwhite:hover{
+  color: white;
+}
+.up:hover{
+  color: white;
+  transform:;
+}
 /* PADDING&MARGINI */
 .pd_30{
   padding: 30px 0px;

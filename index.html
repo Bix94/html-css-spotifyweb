@@ -12,24 +12,24 @@
   <div class="container">
     <main>
       <!-- NAVH+NAVB+NAVF -->
-      <section class="main-nav tcg bgcbk">
+      <section class="main-nav pdl_30 tcg bgcbk">
         <!-- img Spotify -->
         <div class="main-nav-header pdt_20 pdb_20">
-          <img class="logo pdl_20" src="img/logo.svg" alt="">
+          <img class="logo" src="img/logo.svg" alt="">
         </div>
         <!-- /NAVH -->
         <div class="main-nav-body lh">
-          <div class="home pdl_20 pdb_20">
+          <div class="home pdb_20">
             <ul>
-              <li><img class="sm pdr_5" src="img/home.svg" alt="">Home</li>
-              <li><img class="sm pdr_5" src="img/search.svg" alt="">Cerca</li>
-              <li><img class="sm pdr_5" src="img/libreria.svg" alt="">La tua libreria</li>
+              <li class="hwhite"><img class="sm pdr_5" src="img/home.svg" alt="">Home</li>
+              <li class="hwhite"><img class="sm pdr_5" src="img/search.svg" alt="">Cerca</li>
+              <li class="hwhite"><img class="sm pdr_5" src="img/libreria.svg" alt="">La tua libreria</li>
             </ul>
           </div>
           <!-- playlist + IMG crea playlist -->
-          <div class="playlist pdl_20">
+          <div class="playlist">
             <h3 class="up tcw">Playlist</h3>
-            <span> <img src="" alt="">Crea Playlist</span>
+            <span class="hwhite"> <img src="" alt="">Crea Playlist</span>
           <!-- overflow auto -->
             <div class="overflow">
               <ul class="nome">
@@ -45,11 +45,11 @@
           </div>
         </div>
         <!-- /NAVB -->
-        <div class="main-nav-footer pdl_20">
+        <div class="main-nav-footer">
           <!-- H + HR + IMG + SPAN -->
-          <h5 class="pdb_10"><img class="xs pdr_10" src="img/download.svg" alt="">Installa app</h5>
+          <h5 class="pdb_10 hwhite"><img class="xs pdr_10" src="img/download.svg" alt="">Installa app</h5>
           <hr>
-          <h3 class="pdt_10 pdb_10 tcw"> <img class="sm pdr_10" src="img/profile.svg" alt="">John Doe</h3>
+          <h3 class="pdt_10 pdb_10 tcw"> <img class="sm pdr_10" src="https://i.imgur.com/WjZo0cn.png" alt="">Bix</h3>
         </div>
         <!-- /NAVF -->
       </section>
@@ -57,12 +57,12 @@
       <section class="main-libreria pdl_10">
         <!-- btn upgrade -->
         <div class="top">
-          <a href="" class="btn">effettua l'upgrade</a>
+          <span><a href="" class="btn up">effettua l'upgrade</a></span>
         </div>
-        <div class="libreria tac tcg">
+        <div class="libreria tcg">
           <!-- ul -->
           <ul class="navbar pdt_20">
-            <li>in evidenza</li>
+            <li id="bg">in evidenza</li>
             <li>podcast</li>
             <li>classifiche</li>
             <li>generi e mood</li>
@@ -72,50 +72,68 @@
           <!-- h3 + img + parte sotto -->
           <div class="recenti pdt_30">
             <h2 class="pdb_20">Recently Played</h2>
-            <div class="">
-              <img class="normal" src="img/metal_lifting.jpg" alt="">
-              <h4>Heavy Metal</h4>
-              <p>Subtitle</p>
-            </div>
-            <div class="">
-              <img class="normal" src="img/stranger.jpeg" alt="">
-              <h4>Stranger Things</h4>
-              <p>Kyle Dixon & Micheal Stein</p>
-            </div>
-            <div class="">
-              <img class="normal" src="img/aquietplace.jpeg" alt="">
-              <h4>A Quite place</h4>
-              <p>Subtitle</p>
-            </div>
-            <div class="">
-              <img class="normal" src="img/split.jpeg" alt="">
-              <h4>Split</h4>
-              <p>Subtitle</p>
-            </div>
-            <div class="">
-              <img class="normal" src="img/cure.jpeg" alt="">
-              <h4>A cure of welness</h4>
-              <p>Subtitle</p>
-            </div>
-            <div class="">
-              <img class="normal" src="img/sinister.jpeg" alt="">
-              <h4>Sinister</h4>
-              <p>Subtitle</p>
+            <div class="row tac">
+              <div class="brano">
+                <img class="normal opa" src="img/metal_lifting.jpg" alt="">
+                <h4>Heavy Metal</h4>
+                <p>Subtitle</p>
+              </div>
+              <div class="brano">
+                <img class="normal opa" src="img/stranger.jpeg" alt="">
+                <h4>Stranger Things</h4>
+                <p>Kyle Dixon & Micheal Stein</p>
+              </div>
+              <div class="brano">
+                <img class="normal opa" src="img/aquietplace.jpeg" alt="">
+                <h4>A Quite place</h4>
+                <p>Subtitle</p>
+              </div>
+              <div class="brano">
+                <img class="normal opa" src="img/split.jpeg" alt="">
+                <h4>Split</h4>
+                <p>Subtitle</p>
+              </div>
+              <div class="brano">
+                <img class="normal opa" src="img/cure.jpeg" alt="">
+                <h4>A cure of welness</h4>
+                <p>Subtitle</p>
+              </div>
+              <div class="brano">
+                <img class="normal opa" src="img/sinister.jpeg" alt="">
+                <h4>Sinister</h4>
+                <p>Subtitle</p>
+              </div>
             </div>
           </div>
               <!-- h3 + img + parte sotto? -->
           <div class="suggeriti pdt_30">
-            <h2 class="pdb_10">Creato per Don Joe</h2>
+            <h2 class="pdb_10">Creato per Bix</h2>
             <p  class="pdb_30">Più ascolti, più accurati saranno i suggerimenti.</p>
-            <img class="normal" src="img/radar.jpeg" alt="">
-            <img class="normal" src="img/mixdaily.jpeg" alt="">
+            <div class="row tac">
+              <div class="brano">
+                <img class="normal opa" src="img/radar.jpeg" alt="">
+                <h4>Release Radar</h4>
+              </div>
+              <div class="brano">
+                <img class="normal opa" src="img/mixdaily.jpeg" alt="">
+                <h4>Daily Mix 1</h4>
+              </div>
+            </div>
           </div>
               <!-- h3 + img + parte sotto? -->
           <div class="artisti pdt_30">
             <h2 class="pdb_10">Artisti più popolari</h2>
             <p class="pdb_30">Più ascolti, più accurati saranno i suggerimenti.</p>
-            <img class="normal circle" src="img/youg.jpeg" alt="">
-            <img class="normal circle" src="img/einaudi.jpeg" alt="">
+            <div class="row tac pdb_30">
+              <div class="brano">
+                <img class="normal opa circle" src="img/youg.jpeg" alt="">
+                <h4>Lana Del Rey</h4>
+              </div>
+              <div class="brano">
+                <img class="normal opa circle" src="img/einaudi.jpeg" alt="">
+                <h4>Ludovico Enaudi</h4>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /MAIN LIBRERIA -->
@@ -124,12 +142,14 @@
     <!-- /MAIN -->
     <!-- FOOTER -->
     <footer>
-      <div class="foot">
+      <div class="foot tcw">
         <!-- SX -->
-        <div class="box">
+        <div class="box sx">
           <!-- img+ brano -->
          <div class="">
-           <!-- ? -->
+           <img class="md" src="img/sinister.jpeg" alt="">
+           <h5>Sinister</h5>
+           Brano Nome
          </div>
          <!-- 2 ico -->
          <div class="">
@@ -140,7 +160,7 @@
          </div>
         </div>
         <!-- CC -->
-        <div class="box">
+        <div class="box cc">
          <ul class="player">
            <li></li>
            <li></li>
@@ -151,7 +171,7 @@
          <!-- ? -->
         </div>
         <!-- DX -->
-        <div class="box">
+        <div class="box dx">
          <ul class="settings">
            <li></li>
            <li></li>
