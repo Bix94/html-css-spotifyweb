@@ -8,8 +8,21 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: yellow;
   overflow: hidden;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.block{
+  display: inline-block;
+}
+.middle{
+  vertical-align: middle;
 }
 /* RED STATS flex e fixed */
 main {
@@ -45,6 +58,13 @@ hr{
 .circle{
   border-radius:999em;
 }
+.ombra:hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+}
 .logo{
   height: 47px;
 }
@@ -73,8 +93,6 @@ hr{
   min-height: 300px;
   overflow-y: auto;
 }
-.play_flow{
-}
 /* FLEX COLONNA */
 .main-nav {
   width: 250px;
@@ -93,6 +111,7 @@ hr{
   display: flex;
   flex-direction: row;
 }
+
 .top {
   position: fixed;
   top:0;
@@ -149,10 +168,12 @@ flex-direction: row;
 }
 .player li{
   display: inline;
-  font-size: 25px;
-  padding-right: 30px;
+  font-size: 20px;
+  padding-right: 25px;
 }
-
+#oversize{
+  font-size: 30px;
+}
 .settings li{
   display: inline;
   padding-right: 10px;
@@ -185,14 +206,8 @@ a.btn:hover {
   width: 100%;
   padding: 20px 20px;
 }
-
-.column{
-  display: flex;
-  flex-direction: column;
-}
-.row{
-  display: flex;
-  flex-direction: row;
+.info_brano p{
+  font-size: 10px;
 }
 .folder{
   font-size: 25px;
@@ -202,18 +217,41 @@ a.btn:hover {
   padding-top: 10px;
   padding-right: 5px;
 }
+.player{
+  padding-left: 140px;
+}
+.lenght{
+  justify-content: space-between;
+  line-height: 4px;
+}
+.lenght span{
+  font-size: 10px;
+}
+.barra1{
+  height: 5px;
+  width: 400px;
+  background-color: #5a5a5a;
+  border-radius: 5px;
+}
+.barrain1{
+  height: 5px;
+  width: 40px;
+  background-color: #c1c1c1;
+  border-radius: 5px;
+}
 .barra2{
   height: 5px;
   width: 130px;
-  background-color: white;
+  background-color: #5a5a5a;
   border-radius: 5px;
 }
 .barrain2{
   height: 5px;
   width: 40px;
-  background-color: red;
+  background-color: #c1c1c1;
   border-radius: 5px;
 }
+
 /* WARNING STILI */
 .up{
   text-transform: uppercase;
@@ -229,7 +267,6 @@ a.btn:hover {
 .hwhite:hover{
   color: white;
 }
-
 /* PADDING&MARGINI */
 .pd_30{
   padding: 30px 0px;
@@ -249,6 +286,9 @@ a.btn:hover {
 }
 .pdt_10{
   padding-top: 10px;
+}
+.pdt_5{
+  padding-top: 5px;
 }
 /* BOTTOM */
 .pdb_50{
