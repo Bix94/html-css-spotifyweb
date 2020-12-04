@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Spotify</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
 <!-- CONTAINER -->
@@ -20,6 +21,8 @@
         <!-- /NAVH -->
         <div class="main-nav-body lh">
           <div class="home pdb_20">
+            <!-- div verde + ul -->
+            <div class="evidence2"></div>
             <ul>
               <li class="hwhite"><img class="sm pdr_5" src="img/home.svg" alt="">Home</li>
               <li class="hwhite"><img class="sm pdr_5" src="img/search.svg" alt="">Cerca</li>
@@ -31,7 +34,8 @@
             <h3 class="up tcw">Playlist</h3>
             <span class="hwhite"> <img src="" alt="">Crea Playlist</span>
           <!-- overflow auto -->
-            <div class="overflow">
+            <div class="play_flow">
+              <!-- ul -->
               <ul class="nome">
                 <li><a href="">Nome playlist</a></li>
                 <li><a href="">Nome playlist</a></li>
@@ -56,23 +60,26 @@
       <!-- /NAV -->
       <section class="main-libreria pdl_10">
         <!-- btn upgrade -->
-        <div class="top">
+        <div class="top pdr_20">
           <a href="" class="btn">effettua l'upgrade</a>
         </div>
         <div class="libreria tcg">
           <!-- ul -->
           <ul class="navbar pdt_20 pdl_100 tac">
-            <li id="bg">in evidenza</li>
+            <li>in evidenza</li>
             <li>podcast</li>
             <li>classifiche</li>
             <li>generi e mood</li>
             <li>nuove uscite</li>
             <li>scopri</li>
           </ul>
+          <div class="evidence"></div>
           <!-- h3 + img + parte sotto -->
           <div class="recenti pdt_30">
             <h2 class="pdb_20">Recently Played</h2>
+            <!-- row flex -->
             <div class="row tac">
+              <!-- div img+h4+p x6 -->
               <div class="brano">
                 <img class="normal opa" src="img/metal_lifting.jpg" alt="">
                 <h4>Heavy Metal</h4>
@@ -105,13 +112,16 @@
               </div>
             </div>
           </div>
-              <!-- h3 + img + parte sotto? -->
+          <!-- /evidence -->
           <div class="suggeriti pdt_30">
+            <!-- h + img + p-->
             <h2 class="pdb_10">Creato per Bix</h2>
             <p  class="pdb_30">Più ascolti, più accurati saranno i suggerimenti.</p>
+            <!-- row -->
             <div class="row tac">
+              <!-- img + h4 x2 -->
               <div class="brano">
-                <img class="normal opa" src="img/radar.jpeg" alt="">
+                <img class="normal opa pdr_20" src="img/radar.jpeg" alt="">
                 <h4>Release Radar</h4>
               </div>
               <div class="brano">
@@ -120,13 +130,16 @@
               </div>
             </div>
           </div>
-              <!-- h3 + img + parte sotto? -->
+          <!-- /suggeriti    -->
           <div class="artisti pdt_30">
+            <!-- h+p -->
             <h2 class="pdb_10">Artisti più popolari</h2>
             <p class="pdb_30">Più ascolti, più accurati saranno i suggerimenti.</p>
+            <!-- row -->
             <div class="row tac pdb_30">
+              <!-- img+ h4 *2 -->
               <div class="brano">
-                <img class="normal opa circle" src="img/youg.jpeg" alt="">
+                <img class="normal opa circle pdr_20" src="img/youg.jpeg" alt="">
                 <h4>Lana Del Rey</h4>
               </div>
               <div class="brano">
@@ -135,6 +148,7 @@
               </div>
             </div>
           </div>
+          <!-- /artisti -->
         </div>
         <!-- /MAIN LIBRERIA -->
       </section>
@@ -144,12 +158,16 @@
     <footer>
       <div class="foot tcw">
         <!-- SX -->
-        <div class="box sx">
-          <!-- img+ brano -->
-         <div class="">
-           <img class="md" src="img/sinister.jpeg" alt="">
-           <h5>Sinister</h5>
-           Brano Nome
+        <div class="row sinister">
+          <!-- img+ brano + ico -->
+          <img class="md" src="img/sinister.jpeg" alt="">
+         <div class="pdl_10">
+           <h4 class="pdt_10">Sinister</h4>
+           <span class="tcg">Brano nome</span>
+         </div>
+         <div class="folder pdl_20">
+           <i class="far fa-heart hwhite"></i>
+           <i class="far fa-folder hwhite"></i>
          </div>
          <!-- 2 ico -->
          <div class="">
@@ -160,24 +178,33 @@
          </div>
         </div>
         <!-- CC -->
-        <div class="box cc">
-         <ul class="player">
-           <li></li>
-           <li></li>
-           <li></li>
-           <li></li>
-           <li></li>
+        <div class="playmusic">
+         <ul class="player pdb_10">
+           <li><i class="fas fa-random"></i></li>
+           <li><i class="fas fa-step-backward"></i></li>
+           <li><i class="far fa-play-circle"></i></li>
+           <li><i class="fas fa-step-forward"></i></li>
+           <li><i class="fas fa-redo-alt"></i></li>
          </ul>
-         <!-- ? -->
         </div>
+        <!-- <div class="datimusica row">
+          <span>0.25</span>
+          <div class="barra1">
+            <div class="barrain2"></div>
+          </div>
+          <span>4.35</span>
+        </div> -->
         <!-- DX -->
-        <div class="box dx">
-         <ul class="settings">
-           <li></li>
-           <li></li>
-           <li></li>
-           <li></li>
+        <div class="control row">
+         <ul class="settings ">
+           <li><i class="fas fa-list"></i></li>
+           <li><i class="fas fa-desktop"></i></li>
+           <li><i class="fas fa-volume-up"></i></li>
          </ul>
+         <div class="barra2">
+           <div class="barrain2"></div>
+         </div>
+
         </div>
       </div>
       <!-- /FOOT -->
