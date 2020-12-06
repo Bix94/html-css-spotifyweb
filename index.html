@@ -16,26 +16,28 @@
       <section class="main-nav pdl_30 tcg bgcbk">
         <!-- img Spotify -->
         <div class="main-nav-header pdt_20 pdb_20">
-          <img class="logo" src="img/logo.svg" alt="">
+          <img src="img/logo.svg" alt="">
         </div>
         <!-- /NAVH -->
         <div class="main-nav-body lh">
           <div class="home pdb_20">
             <!-- div verde + ul -->
-            <div class="evidence2"></div>
             <ul>
-              <li class="hwhite"><img class="sm pdr_5" src="img/home.svg" alt="">Home</li>
-              <li class="hwhite"><img class="sm pdr_5" src="img/search.svg" alt="">Cerca</li>
-              <li class="hwhite"><img class="sm pdr_5" src="img/libreria.svg" alt="">La tua libreria</li>
+              <li class="hwhite blgreen pdb_5"><img class="sm pdr_10 middle" src="img/home.svg" alt="">Home</li>
+              <li class="hwhite pdb_5"><img class="sm pdr_10 middle" src="img/search.svg" alt="">Cerca</li>
+              <li class="hwhite"><img class="sm pdr_10 middle" src="img/libreria.svg" alt="">La tua libreria</li>
             </ul>
           </div>
           <!-- playlist + IMG crea playlist -->
           <div class="playlist">
             <h3 class="up tcw">Playlist</h3>
-            <span class="hwhite"> <img src="" alt="">Crea Playlist</span>
           <!-- overflow auto -->
             <div class="play_flow">
               <!-- ul -->
+              <div class="row aic hwhite">
+                <i class="fas fa-plus-square pdr_10 add"></i>
+                <h3>Crea Playlist</h3>
+              </div>
               <ul class="nome">
                 <li><a href="">Nome playlist</a></li>
                 <li><a href="">Nome playlist</a></li>
@@ -64,14 +66,14 @@
         <!-- /NAVF -->
       </section>
       <!-- /NAV -->
-      <section class="main-libreria pdl_10">
+      <section class="main-libreria row pdl_10">
         <!-- btn upgrade -->
         <div class="top pdr_20">
           <a href="" class="btn">effettua l'upgrade</a>
         </div>
         <div class="libreria tcg">
           <!-- ul -->
-          <ul class="navbar pdt_20 pdl_100 tac">
+          <ul class="navbar pdt_20 pdl_150 tac">
             <li>in evidenza</li>
             <li>podcast</li>
             <li>classifiche</li>
@@ -87,13 +89,14 @@
             <div class="row tac">
               <!-- div img+h4+p x6 -->
               <div class="brano">
+                <!-- <i class="far fa-play-circle"></i> -->
                 <img class="normal opa" src="img/metal_lifting.jpg" alt="">
                 <h4>Heavy Metal</h4>
                 <p>Subtitle</p>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/stranger.jpeg" alt="">
-                <h4>Stranger Things</h4>
+                <h4>Stranger Things, Vol. 1(a Netflix original series soundtrack)</h4>
                 <p>Kyle Dixon & Micheal Stein</p>
               </div>
               <div class="brano">
@@ -145,10 +148,11 @@
             <div class="row tac pdb_30">
               <!-- img+ h4 *2 -->
               <div class="brano">
-                <img class="normal opa circle pdr_20" src="img/youg.jpeg" alt="">
+                <img class="normal opa circle" src="img/youg.jpeg" alt="">
                 <h4>Lana Del Rey</h4>
               </div>
               <div class="brano">
+                <!-- <i class="far fa-play-circle"></i> -->
                 <img class="normal opa circle" src="img/einaudi.jpeg" alt="">
                 <h4>Ludovico Enaudi</h4>
               </div>
@@ -162,14 +166,14 @@
     <!-- /MAIN -->
     <!-- FOOTER -->
     <footer>
-      <div class="foot row tcw">
+      <div class="foot row aic spb tcw">
         <!-- SX -->
         <div class="sinister row">
           <!-- img+ brano + ico -->
           <img class="md" src="img/sinister.jpeg" alt="">
           <div class="info_brano pdl_10">
-             <h4 class="pdt_10">Sinister</h4>
-             <p class="tcg">Brano nome</p>
+             <h4>Sinister</h4>
+             <p class="tcg underwhite">Brano nome</p>
           </div>
          <!-- 2 ico -->
           <div class="folder pdl_20">
@@ -179,16 +183,16 @@
         </div>
         <!-- CC -->
         <div class="playmusic column">
-          <div class="player pdb_10">
+          <div class="player tac pdb_10">
             <ul>
               <li><i class="fas fa-random"></i></li>
               <li><i class="fas fa-step-backward"></i></li>
-              <li id="oversize"><i class="far fa-play-circle"></i></li>
+              <li id="oversize"><i class="far fa-play-circle scale1"></i></li>
               <li><i class="fas fa-step-forward"></i></li>
               <li><i class="fas fa-redo-alt"></i></li>
             </ul>
           </div>
-          <div class="lenght row">
+          <div class="lenght spb row">
             <span class="pdr_30">0.25</span>
             <div class="barra1">
               <div class="barrain2"></div>
@@ -197,7 +201,7 @@
           </div>
         </div>
 
-        <div class="control row pdt_20">
+        <div class="control row">
          <ul class="settings">
            <li><i class="fas fa-list"></i></li>
            <li><i class="fas fa-desktop"></i></li>
@@ -205,6 +209,7 @@
          </ul>
          <div class="volume pdt_5">
            <div class="barra2">
+             <div class="pallino"></div>
              <div class="barrain2"></div>
            </div>
          </div>
