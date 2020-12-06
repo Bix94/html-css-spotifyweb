@@ -153,16 +153,13 @@ font-style: solid style ;
   width: 50px;
   color: green;
   background-color: green;
-  margin-left: 350px;
+  margin-left: 353px;
 }
 .brano{
   width: calc(100% / 6 - 10px);
   margin-right: 10px;
 }
 /* LISTE */
-.blgreen{
-  border-left: 1px green;
-}
 .navbar li{
   display: inline;
   text-transform: uppercase;
@@ -234,14 +231,26 @@ a.btn:hover {
   width: 400px;
   background-color: #5a5a5a;
   border-radius: 5px;
+  position: relative;
 }
 .barrain1{
   height: 5px;
   width: 40px;
   background-color: #c1c1c1;
   border-radius: 5px;
+  position: relative;
 }
-
+.pallino1{
+  z-index: 3;
+  width: 15px;
+  height: 15px;
+  border-radius: 999rem;
+  background-color: green;
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  display: none;
+}
 .barra2{
   height: 5px;
   width: 130px;
@@ -256,7 +265,7 @@ a.btn:hover {
   border-radius: 5px;
   position: relative;
 }
-.pallino{
+.pallino2{
   z-index: 3;
   width: 15px;
   height: 15px;
@@ -266,6 +275,12 @@ a.btn:hover {
   top: -5px;
   left: 30px;
   display: none;
+}
+.barra2:hover .pallino2{
+  display: block;
+}
+.barra1:hover .pallino1{
+  display: block;
 }
 /*  WARNING HOVER */
 .opa:hover{
