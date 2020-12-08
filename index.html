@@ -13,10 +13,11 @@
   <div class="container">
     <main>
       <!-- NAVH+NAVB+NAVF -->
-      <section class="main-nav pdl_30 tcg bgcbk">
+      <section class="main-nav tcg bgcbk pdl_30">
         <!-- img Spotify -->
         <div class="main-nav-header pdt_20 pdb_20">
-          <img src="img/logo.svg" alt="">
+          <img src="img/logo.svg" class="logo" alt="">
+          <img src="img/favicon.ico" class="ico tcw" alt="">
         </div>
         <!-- /NAVH -->
         <div class="main-nav-body lh">
@@ -26,6 +27,11 @@
               <li class="hwhite pdb_5"><img class="sm pdr_10 middle" src="img/home.svg" alt="">Home</li>
               <li class="hwhite pdb_5"><img class="sm pdr_10 middle" src="img/search.svg" alt="">Cerca</li>
               <li class="hwhite"><img class="sm pdr_10 middle" src="img/libreria.svg" alt="">La tua libreria</li>
+            </ul>
+            <ul class="blgreen2 pdt_20">
+              <li class="hwhite pdb_5"><img class="sm" src="img/home.svg" alt=""></li>
+              <li class="hwhite pdb_5"><img class="sm" src="img/search.svg" alt=""></li>
+              <li class="hwhite"><img class="sm" src="img/libreria.svg" alt=""></li>
             </ul>
           </div>
           <!-- playlist + IMG crea playlist -->
@@ -38,7 +44,7 @@
                 <i class="fas fa-plus-square pdr_10 add"></i>
                 <h3>Crea Playlist</h3>
               </div>
-              <ul class="nome">
+              <ul class="nome pdt_10">
                 <li><a href="">Nome playlist</a></li>
                 <li><a href="">Nome playlist</a></li>
                 <li><a href="">Nome playlist</a></li>
@@ -58,15 +64,15 @@
             <span class="pdb_10 hwhite">Installa app</span>
           </div>
           <hr>
-          <div class="pdt_10 pdb_10">
+          <div class="pdt_10 pdb_10 utente">
            <img class="sm pdr_10 middle" src="https://i.imgur.com/WjZo0cn.png" alt="">
-           <h5 class="tcw block">Bix</h5>
+           <span class="tcw">Bix</span>
           </div>
         </div>
         <!-- /NAVF -->
       </section>
       <!-- /NAV -->
-      <section class="main-libreria row ">
+      <section class="main-libreria row">
         <!-- btn upgrade -->
         <div class="top pdr_20">
           <a href="" class="btn">effettua l'upgrade</a>
@@ -89,35 +95,52 @@
             <div class="row tac">
               <!-- div img+h4+p x6 -->
               <div class="brano">
-                <!-- <i class="far fa-play-circle"></i> -->
                 <img class="normal opa" src="img/metal_lifting.jpg" alt="">
                 <h4>Heavy Metal</h4>
                 <p>Subtitle</p>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/stranger.jpeg" alt="">
                 <h4>Stranger Things, Vol. 1(a Netflix original series soundtrack)</h4>
                 <p>Kyle Dixon & Micheal Stein</p>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/aquietplace.jpeg" alt="">
                 <h4>A Quite place</h4>
                 <p>Subtitle</p>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/split.jpeg" alt="">
                 <h4>Split</h4>
                 <p>Subtitle</p>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/cure.jpeg" alt="">
                 <h4>A cure of welness</h4>
                 <p>Subtitle</p>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/sinister.jpeg" alt="">
                 <h4>Sinister</h4>
                 <p>Subtitle</p>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -132,10 +155,16 @@
               <div class="brano">
                 <img class="normal opa pdr_20 pdl_20" src="img/radar.jpeg" alt="">
                 <h4>Release Radar</h4>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <img class="normal opa" src="img/mixdaily.jpeg" alt="">
                 <h4>Daily Mix 1</h4>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -150,11 +179,17 @@
               <div class="brano">
                 <img class="normal opa circle" src="img/youg.jpeg" alt="">
                 <h4>Lana Del Rey</h4>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
               <div class="brano">
                 <!-- <i class="far fa-play-circle"></i> -->
                 <img class="normal opa circle" src="img/einaudi.jpeg" alt="">
                 <h4>Ludovico Enaudi</h4>
+                <div class="overlay">
+                 <i class="far fa-play-circle"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -182,7 +217,7 @@
           </div>
         </div>
         <!-- CC -->
-        <div class="playmusic column">
+        <div class="playmusic column ">
           <div class="player tac pdb_10">
             <ul>
               <li><i class="fas fa-random"></i></li>

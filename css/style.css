@@ -30,11 +30,14 @@ align-items: start;
 align-items: end;
 }
 /* REGOLE ASSE X */
-.fxs{
+.jcs{
  justify-content: flex-start;
 }
-.fxe{
+.jce{
   justify-content: flex-end;
+}
+.jcc{
+  justify-content: center;
 }
 .spb{
   justify-content: space-between;
@@ -77,6 +80,12 @@ ul{
 hr{
   width: 90%;
 }
+.up{
+  text-transform: uppercase;
+}
+.tac{
+  text-align: center;
+}
 /* NON LEGGEVA ICO  */
 /* h3::before{
 content: "\f0fe";
@@ -98,6 +107,13 @@ font-style: solid style ;
 .xs{
   height: 20px;
 }
+.logo{
+  height: 47px;
+}
+.ico{
+  height: 40px;
+
+}
 /* COLORI SFONDI */
 .bgcbk {
   background-color: black;
@@ -109,10 +125,13 @@ font-style: solid style ;
   color: #919496;
 }
 /* NAV SX  OVERFLOW Y*/
-.main-nav-body {
-  flex-grow: 2;
-  min-height: 300px;
+.main-nav-body{
   overflow-y: auto;
+  min-height: 300px;
+  flex-grow: 2;
+}
+.playlist{
+
 }
 /* FLEX COLONNA */
 .main-nav {
@@ -153,13 +172,24 @@ font-style: solid style ;
   width: 50px;
   color: green;
   background-color: green;
-  margin-left: 353px;
+  margin-left: 29%;
 }
 .brano{
   width: calc(100% / 6 - 10px);
   margin-right: 10px;
+  flex-shrink: 3;
+  position: relative;
+  display: inline-block;
 }
-/* LISTE */
+.overlay{
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  top: 50px;
+  left: 65px;
+  display: none;
+}
+/* LISTE WARNING */
 .navbar li{
   display: inline;
   text-transform: uppercase;
@@ -299,13 +329,38 @@ a.btn:hover {
 .scale1:hover{
     transform: scale(1.2);
 }
-/* WARNING STILI */
-.up{
-  text-transform: uppercase;
+.brano:hover .overlay{
+  display: block;
 }
-.tac{
-  text-align: center;
+/* MEDIA WARNING */
+/* HEIGHT */
+@media all and (max-height: 550px) {
+  .utente{
+    display: none;
+  }
 }
+/* WIDTH */
+@media all and (max-width: 500px) {
+  .main-nav{
+    width: 50px;
+  }
+}
+@media all and (min-width: 500px) {
+  .ico , .blgreen2{
+    display: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .logo , .playlist , hr , span , .blgreen{
+    display: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .top , .main-libreria{
+    width: calc(100% - 50px) ;
+  }
+}
+
 
 /* PADDING&MARGINI */
 .pd_30{
