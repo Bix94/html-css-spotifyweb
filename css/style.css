@@ -8,7 +8,6 @@
 .container {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 body{
   font-family: sans-serif;
@@ -58,7 +57,7 @@ align-items: end;
 main {
   display: flex;
   height: calc(100% - 90px);
-
+  overflow: hidden;
 }
 footer {
   width: 100%;
@@ -128,49 +127,40 @@ font-style: solid style ;
   color: #919496;
 }
 /* FLEX COLONNA */
+/* WARNING non funziona SCROLL */
+/* .main-nav .scroll .nome{
+  margin-top: 10px;
+  height: 100%;
+  overflow-y: auto;
+} */
 .main-nav {
   width: 250px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main-nav-body{
-  overflow: hidden;
+.main-nav .main-menu .bl-green li {
+  padding-left: 17px;
+  border-left: 3px solid transparent;
+  line-height: 35px;
+}
+
+.main-nav .main-menu .menu-list li.active {
+  border-left: 3px solid #adff2f;
 }
 .navbar{
   width: 100%;
 }
-/* WARNING non funziona SCROLL */
-.nome{
-  overflow: auto;
-  width: 100%;
-  min-height: 200px;
-}
-
 .main-nav-footer{
-  height: 100px;
+  min-height: 300px;
   background-color: black;
 }
 /* PARTE DX */
 .main-libreria {
   width: calc(100% - 250px);
-  height: 100%;
   padding-top: 90px;
   background-color: #141922;
   overflow-y: scroll;
-}
-.top {
-  position: fixed;
-  top:0;
-  right:0;
-  z-index: 1;
-  width: calc(100% - 250px);
-  height: 90px;
-  line-height: 90px;
-  text-align: right;
-  background-color: rgba(0,0,0,0.5 );
-
 }
 .add{
   font-size: 50px;
@@ -186,6 +176,17 @@ font-style: solid style ;
   width: 30px;
   background-color: green;
   height: 3px;
+}
+.top {
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 1;
+  width: calc(100% - 250px);
+  height: 90px;
+  line-height: 90px;
+  text-align: right;
+  background-color: rgba(0,0,0,0.5 );
 }
 .brano{
   /* width: calc(100% / 6); */
