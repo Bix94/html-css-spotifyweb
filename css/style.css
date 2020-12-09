@@ -127,11 +127,13 @@ font-style: solid style ;
   color: #919496;
 }
 /* FLEX COLONNA */
-/* WARNING non funziona SCROLL */
-/* .main-nav .scroll .nome{
-  margin-top: 10px;
-  height: 100%;
-  overflow-y: auto;
+/* .bl-green li {
+  padding-left: 17px;
+  border-left: 3px solid transparent;
+  line-height: 35px;
+} */
+/* .main-nav .main-menu .menu-list li.active {
+  border-left: 3px solid #adff2f;
 } */
 .main-nav {
   width: 250px;
@@ -139,20 +141,15 @@ font-style: solid style ;
   flex-direction: column;
   justify-content: space-between;
 }
-.main-nav .main-menu .bl-green li {
-  padding-left: 17px;
-  border-left: 3px solid transparent;
-  line-height: 35px;
-}
-
-.main-nav .main-menu .menu-list li.active {
-  border-left: 3px solid #adff2f;
-}
 .navbar{
   width: 100%;
 }
+.scroll{
+  max-height: 150px;
+  overflow-y: auto;
+}
 .main-nav-footer{
-  min-height: 300px;
+  min-height: 200px;
   background-color: black;
 }
 /* PARTE DX */
@@ -383,10 +380,10 @@ a.btn:hover {
 }
 /* MEDIA WARNING */
 /* HEIGHT */
-@media all and (max-height: 550px) {
-  /* .utente{
+@media all and (max-height: 600px) {
+  .main-nav-footer{
     display: none;
-  } */
+  }
 }
 /* WIDTH */
 @media all and (max-width: 500px) {
